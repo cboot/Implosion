@@ -1,0 +1,45 @@
+{
+	"0": {
+		"description": "The hydroponic researchs increases your food production",
+		"levels": [
+			{
+				"level": 1,
+				"buildingsRequired": [
+					{
+						"id": 0,
+						"level": 3
+					}
+				],
+				"researchsRequired": [],
+				"cost": {
+					"resource0": 5000,
+					"resource1": 1000
+				},
+				"secondsToBuild": 12,
+				"productionIncrease": {},
+				"multiplierIncrease": {
+					"resource0": 10
+				}
+			},
+			{
+				"level": 2,
+				"buildingsRequired": [
+					{
+						"id": 0,
+						"level": 5
+					}
+				],
+				"researchsRequired": [],
+				"cost": {
+					"resource0": 50000,
+					"resource1": 10000
+				},
+				"secondsToBuild": 20,
+				"productionIncrease": {},
+				"multiplierIncrease": {
+					"resource0": 10
+				}
+			}
+		]
+	}
+}

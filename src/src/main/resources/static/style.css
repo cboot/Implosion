@@ -1,0 +1,15 @@
+body {
+	margin-top:10px;
+}
+
+.pointer {
+	cursor:pointer;
+}
+
+#planets{
+	background-color:pink;
+}
+
+#buildings{
+	background-color:green;
+}

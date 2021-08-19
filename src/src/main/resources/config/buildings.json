@@ -1,0 +1,87 @@
+{
+	"0": {
+		"description": "The farm allows you to produce some food",
+		"levels": [
+			{
+				"level": 1,
+				"buildingsRequired": [],
+				"researchsRequired": [],
+				"cost": {
+					"0": 100,
+					"1": 50
+				},
+				"secondsToBuild": 12,
+				"productionIncrease": {
+					"0": 2
+				},
+				"multiplierIncrease": {}
+			},
+			{
+				"level": 2,
+				"buildingsRequired": [
+					{
+						"type": 0,
+						"level": 1
+					}
+				],
+				"researchsRequired": [],
+				"cost": {
+					"0": 100,
+					"1": 50
+				},
+				"secondsToBuild": 20,
+				"productionIncrease": {
+					"0": 4
+				},
+				"multiplierIncrease": {}
+			}
+		]
+	},
+	"1": {
+		"description": "The iron mine allows you to produce some iron",
+		"levels": [
+			{
+				"level": 1,
+				"buildingsRequired": [
+					{
+						"type": 0,
+						"level": 1
+					}
+				],
+				"researchsRequired": [],
+				"cost": {
+					"0": 100,
+					"1": 50
+				},
+				"secondsToBuild": 12,
+				"productionIncrease": {
+					"1": 2
+				},
+				"multiplierIncrease": {}
+			},
+			{
+				"level": 2,
+				"buildingsRequired": [
+					{
+						"type": 0,
+						"level": 2
+					},
+					{
+						"type": 1,
+						"level": 1
+					}
+				],
+				"researchsRequired": [],
+				"cost": {
+					"0": 100,
+					"1": 50
+				},
+				"secondsToBuild": 20,
+				"productionIncrease": {
+					"0": 4
+				},
+				"multiplierIncrease": {}
+			}
+		]
+	}
+}
