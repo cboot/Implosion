@@ -1,0 +1,5 @@
+{
+    "secret": "this is my secret",
+    "audience": "implosion",
+    "issuer": "https://implosion.com"
+}
