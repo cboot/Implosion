@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+rest:
+  authorization:
+    server: http://localhost:3000
+    endpoint: ${rest.authorization.server}${rest.authorization.context.endpoint}
+
+logging:
+  level:
+    com.implosion: DEBUG
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG

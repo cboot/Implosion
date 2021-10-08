@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: secret
+    url: jdbc:mysql://localhost:3306/USERS_MICRO_SERVICE
+    username: monguering
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  main:
+    show-banner: false
+  thymeleaf:
+    cache: false
+  config:
+    import: application-dev.yml
+
+logging:
+  level:
+    jdbc: TRACE
+    jdbc.resultsettable: DEBUG
+    jdbc.sqltiming: TRACE
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+
+management:
+  security:
+    enabled: false
+security:
+  basic:
+    enabled: false
+
+rest:
+  authorization:
+    context.endpoint: /authorization/authorize
+
+
+config:
+  authorization:
+    request.filter.enabled: false
+

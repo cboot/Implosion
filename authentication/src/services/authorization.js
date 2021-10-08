@@ -4,7 +4,7 @@ var jwt = require('jsonwebtoken'),
 
 function authorize(jwtToken) {
     try {
-      return jwt.verify(jwtToken, config.secret, { complete : true});
+      return jwt.verify(jwtToken, configJWT.secret, { complete : true});
     } catch (err) {
       console.log(err);
     }
@@ -22,7 +22,7 @@ function buildJWT(playerId) {
 }
 
 async function authenticate(user, hashedPass) {
-  const sql = 'SELECT id FROM player WHERE id = ' + connection.escape(user) + ' AND password = ' + connection.escape(hashedPass);
+  const sql = 'SELECT id FROM player WHERE name = ' + connection.escape(user) + ' AND password = ' + connection.escape(hashedPass);
   return new Promise( (resolve, reject) => {
     connection.query(sql, function (error, results, fields) {
       if (error) {
